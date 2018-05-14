@@ -1,9 +1,10 @@
 <ul class="list-inline text-center">
+  <h1>BUDDIES FO THE DAY 🎉</h1>
   <% [["sknzl", "swen"], ["allypatricio", "Ally"]].each do |gh_username, name| %>
     <li>
       <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-rounded avatar", style:" height: 150px; width: 150px; border-radius: 50%" %>
       <h3 ><%= name.capitalize %></h3>
-      <a href="https://github.com/#{gh_username}" ><%= gh_username %></a>
+      <a href="https://github.com/#{gh_username}" ><i class="fab fa-github"></i><%= gh_username%></a>
     </li>
   <% end %>
 </ul>
